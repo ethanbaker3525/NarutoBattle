@@ -18,7 +18,7 @@ wsTurns = shFLFL.worksheet("Turns")
 
 
 
-def NewGame(gameTitle, joinKey, Gamemode):
+def NewGame(gameTitle, joinKey, privKey, Gamemode):
 
     # May implement new gamemodes in the future
 
@@ -46,7 +46,13 @@ def NewGame(gameTitle, joinKey, Gamemode):
     tF.update_cell(1, 14, "Password")
 
     tF.update_cell(50, 100, joinKey)
+    tF.update_cell(50, 99, privKey)
 
     
     return shFLFL.worksheet(gameTitle)
     # returns the nameof the created game
+
+def JoinGame(joinKey):
+
+
+def

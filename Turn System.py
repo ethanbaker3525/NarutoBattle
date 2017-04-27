@@ -16,6 +16,8 @@ wsPlayers = shFLFL.worksheet("Players_&_Stats")
 
 wsTurns = shFLFL.worksheet("Turns")
 
+
+
 def TCycle(ListPlayers):
 
     PlayerCords = {}
@@ -27,3 +29,5 @@ def TCycle(ListPlayers):
 
         playerCell = wsPlayers.find(a)
         PlayerCords[ListPlayers[a]] = playerCell.row
+
+    
